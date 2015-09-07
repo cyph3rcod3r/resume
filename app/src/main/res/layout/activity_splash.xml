@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,6 +9,39 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".DashboardActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_splash"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dp"
+        app:border_color="@android:color/darker_gray"
+        app:border_width="5dp" />
+
+    <sharma.pankaj.resume.views.Typewriter
+        android:id="@+id/typTxvAnimation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/txvResumeHeading"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        android:paddingLeft="8dp"
+        android:text="Loading...\npublic static String RESUME;\n\nLoading strings.xml...\nLoading dimens.xml...\nFinding your device resolution...\nDone...!!!\n\n#\n#\n#\n#\n#########\nAnimation Complete Nothing is loaded\nNow Click on the photo to go inside!"
+        android:textColor="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/txvResumeHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civ_splash"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="RESUME"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textLarge"
+        android:transitionName="transition_name" />
 
 
 </RelativeLayout>
