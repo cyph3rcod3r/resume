@@ -28,7 +28,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/black"
         android:paddingLeft="8dp"
-        android:text="Loading...\npublic static String RESUME;\n\nLoading strings.xml...\nLoading dimens.xml...\nFinding your device resolution...\nDone...!!!\n\n#\n#\n#\n#\n#########\nAnimation Complete Nothing is loaded\nNow Click on the photo to go inside!"
+        android:text="Loading...\n\nLoading scripts...\ndone!\nLoading Device Resolution...\ndone!\nLoading cheese for material design...\ndone!\nClick on my photo to proceed...\n#\n#\n#\n#\n############"
         android:textColor="@android:color/holo_green_light" />
 
     <TextView

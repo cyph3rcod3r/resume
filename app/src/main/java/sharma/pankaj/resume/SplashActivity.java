@@ -1,7 +1,6 @@
 package sharma.pankaj.resume;
 
 import android.annotation.TargetApi;
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -47,15 +46,16 @@ public class SplashActivity extends BaseActivity {
     private void loadActivityAccordingToSdk() {
         Intent i = new Intent(SplashActivity.this, DashboardActivity.class);
 
-        View sharedView = cImgIcon;
-        String transitionName = getString(R.string.transition_name);
+//        View sharedView = cImgIcon;
+//        String transitionName = getString(R.string.transition_name);
+        startActivity(i);
 
-        if (isGreaterThanLollipop()) {
-            ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this, sharedView, transitionName);
-            startActivity(i, transitionActivityOptions.toBundle());
-        } else {
-            startActivity(i);
-        }
+//        if (isGreaterThanLollipop()) {
+//            ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this, sharedView, transitionName);
+//            startActivity(i, transitionActivityOptions.toBundle());
+//        } else {
+//            startActivity(i);
+//        }
     }
 
 }
